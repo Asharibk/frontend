@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap:20px;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .card{
+            width: 200px;
+            padding: 15px;
+            border: 2px solid #333;
+            background-color: #f0f0f0;
+            text-align: center;
+
+        }
+
+        .card img {    /* additional styling */
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Profile1">
+            <h5>John Doe</h5>
+            <p>Front-end developer with a passion for clean UI and minimal design.</p>
+
+
+        </div>
+
+        <div class="card">
+            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="profile2">
+            <h5>Sara Lin</h5>
+            <p>Creative designer and CSS enthusiast who loves animations.</p>
+
+        </div>
+
+        <div class="card">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="profile3">
+            <h5>Carlos Rivera</h5>
+            <p>Javascript junkie and part-time technical blogger</p>
+        </div>
+        
+        
+    </div>
+</body>
+</html>
